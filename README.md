@@ -6,3 +6,4 @@ The user has the option to add a subject line, a greeting, the body of the lette
 ### Known Bugs
 - Keeping a user signed in
 - Notification method does not work if phone is restarted
+- Security vulnerabilities
