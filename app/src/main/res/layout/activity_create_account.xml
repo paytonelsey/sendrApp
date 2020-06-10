@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/logInBG"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/createAccountHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/log_in_top_margin"
+            android:layout_marginBottom="@dimen/log_in_text_top_bottom_margin"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="@string/create_account"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/log_in_header_font_size" />
+
+        <TextView
+            android:id="@+id/accountExists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/side_margin"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/firstNameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/text_padding"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/first_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#52FFFFFF" />
+
+        <EditText
+            android:id="@+id/lastNameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/text_padding"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/last_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#52FFFFFF" />
+
+        <EditText
+            android:id="@+id/emailTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/text_padding"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/email_address"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#52FFFFFF" />
+
+        <EditText
+            android:id="@+id/passwordTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/text_padding"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#52FFFFFF" />
+
+        <EditText
+            android:id="@+id/confirmTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/text_padding"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/password_repeat"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/text_padding"
+            android:paddingEnd="@dimen/text_padding"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#52FFFFFF" />
+
+        <TextView
+            android:id="@+id/passwordRequirementsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="@string/password_requirements"
+            android:textColor="#52FFFFFF" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginTop="@dimen/log_in_text_top_bottom_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:background="@color/logInButtons"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sign_up"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alreadyHaveAccountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/space_under_log_in_button"
+                    android:text="@string/account_question_exist"
+                    android:textColor="#52FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/logInLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/space_under_log_in_button"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:layout_weight="1"
+                    android:linksClickable="true"
+                    android:text="@string/log_in_uc"
+                    android:textAlignment="inherit"
+                    android:textColor="#52FFFFFF"
+                    android:textColorHighlight="@color/linkColor"
+                    android:textColorLink="@color/linkColor"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

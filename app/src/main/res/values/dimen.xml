@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="side_margin">35dp</dimen>
+    <dimen name="log_in_top_margin">120dp</dimen>
+    <dimen name="log_in_text_top_bottom_margin">50dp</dimen>
+    <dimen name="space_under_log_in_button">20dp</dimen>
+    <dimen name="log_in_header_font_size">45sp</dimen>
+    <dimen name="textview_height">40dp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+    <dimen name="account_field_width">200dp</dimen>
+    <dimen name="editTextHeight">30dp</dimen>
+    <dimen name="spaceBetweenItems">20dp</dimen>
+    <dimen name="spaceBetweenDT">40dp</dimen>
+    <dimen name="messageBox">200dp</dimen>
+    <dimen name="profilePicSize">100dp</dimen>
+    <dimen name="fragmentSize">50dp</dimen>
+    <dimen name="aboveDTHeader">52dp</dimen>
+    <dimen name="accountInfoWidth">80dp</dimen>
+    <dimen name="bottomSpaceViewLetter">100dp</dimen>
+    <dimen name="imageViewSize">50dp</dimen>
+    <dimen name="maxImageSize">250dp</dimen>
+    <dimen name="halfSides">15dp</dimen>
+</resources>

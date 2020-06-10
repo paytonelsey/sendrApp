@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Success">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/logInBG"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/spaceBetweenDT"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="@dimen/halfSides"
+                        android:layout_weight="0"
+                        android:background="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/letterView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_padding"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        tools:text="Dear Payton,\n\nIt's very cool to be making something like this. I bet if Payton at age 13 knew how to do this, she would have spent so much time making cool apps. I'm glad you chose this degree, even though it makes you angry sometimes.\n\nSincerely, Payton" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/locationSeparate"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/halfSides"
+                    android:layout_marginTop="@dimen/spaceBetweenItems"
+                    android:layout_marginEnd="@dimen/halfSides"
+                    android:layout_marginBottom="@dimen/spaceBetweenItems"
+                    android:background="#6C6C6C" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/locationImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="@dimen/imageViewSize"
+                        android:maxHeight="@dimen/imageViewSize"
+                        android:minWidth="@dimen/imageViewSize"
+                        android:minHeight="@dimen/imageViewSize"
+                        app:srcCompat="@drawable/location_trimmed" />
+
+                    <TextView
+                        android:id="@+id/locationView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_padding"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        tools:text="2607 N. Lancaster Dr. Apt 101 Boise, ID" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/imageSeparate"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/halfSides"
+                    android:layout_marginTop="@dimen/spaceBetweenItems"
+                    android:layout_marginEnd="@dimen/halfSides"
+                    android:layout_marginBottom="@dimen/spaceBetweenItems"
+                    android:background="#6C6C6C" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/photoImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="@dimen/imageViewSize"
+                        android:maxHeight="@dimen/imageViewSize"
+                        android:minWidth="@dimen/imageViewSize"
+                        android:minHeight="@dimen/imageViewSize"
+                        app:srcCompat="@drawable/pink_camera" />
+
+                    <ImageView
+                        android:id="@+id/pictureView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spaceBetweenItems"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="@dimen/maxImageSize"
+                        android:maxHeight="@dimen/maxImageSize"
+                        android:minWidth="@dimen/maxImageSize"
+                        android:minHeight="@dimen/maxImageSize"
+                        app:srcCompat="@drawable/default_profile_pic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/bottomSpaceViewLetter"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
+            </ScrollView>
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginEnd="@dimen/spaceBetweenItems"
+                android:layout_marginBottom="@dimen/spaceBetweenItems"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/check" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

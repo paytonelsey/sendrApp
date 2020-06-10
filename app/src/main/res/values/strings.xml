@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">sendr</string>
+
+    // Log in screen
+    <string name="log_in">Log in</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="account_question">Don\'t have an account?</string>
+    <string name="sign_up_uc"><u>SIGN UP</u></string>
+    <string name="account_does_not_exist">Invalid email or password</string>
+
+    // Create Account screen
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password_repeat">Confirm password</string>
+    <string name="password_requirements">Must be at least 6 characters</string>
+    <string name="account_question_exist">Already have an account?</string>
+    <string name="log_in_uc"><u>LOG IN</u></string>
+    <string name="account_exists">Account already exists with this email.</string>
+
+    <string name="account">Account</string>
+    <string name="log_out">Log out</string>
+
+    // Home screen
+    <string name="subject">Subject:</string>
+    <string name="greeting">Greeting:</string>
+    <string name="signature">Signature:</string>
+
+    // Default values
+    <string name="default_subject">A Letter From Past You</string>
+    <string name="default_greeting">Dear </string>
+    <string name="default_signature">Sincerely, Your Past Self</string>
+    <string name="click_to_compose">Click to compose…</string>
+
+    // Account screen
+    <string name="okay">Okay</string>
+    <string name="first_name_acct">First Name: </string>
+    <string name="last_name_acct">Last Name: </string>
+    <string name="email_acct">Email: </string>
+
+    // Fragments
+    <string name="upload_text">Upload Photo</string>
+    <string name="location_text">Add Location</string>
+    <string name="location_added_text">Added!</string>
+    <string name="file_uploaded_text">Uploaded!</string>
+
+    // Success
+    <string name="delivered_on">Will be delivered on:</string>
+    <string name="device">To this device.</string>
+
+    // Delivery
+    <string name="set_delivery_header">Set Delivery</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="are_you_sure">Send</string>
+    <string name="popup_text">Are you sure you want to send the letter? Once you send it, you cannot go back.</string>
+    <string name="default_time">%1:%2 %3</string>
+
+    // Display Message
+    <string name="location_header">Location:</string>
+    <string name="image_header">Photo:</string>
+    <string name="letter_header">Letter:</string>
+    <string name="you_have_letter">You have a letter!</string>
+</resources>
